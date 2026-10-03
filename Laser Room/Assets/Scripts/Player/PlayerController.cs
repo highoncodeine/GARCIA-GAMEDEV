@@ -84,4 +84,15 @@ public class PlayerController : MonoBehaviour
             characterController.enabled = true;
         }
     }
+    
+    public void setSpeed(int speed)
+    {
+        moveSpeed = moveSpeed * speed;
+        runSpeed = runSpeed * speed;
+    }
+
+    public void setJump(int jump)
+    {
+        jumpForce = jumpForce * jump;
+    }
 }
